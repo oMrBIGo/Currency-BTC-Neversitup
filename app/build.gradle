@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply from: '../android_commons.gradle'
+
+android {
+    defaultConfig {
+        applicationId ApplicationId.id
+        versionCode Releases.versionCode
+        versionName Releases.versionName
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+            manifestPlaceholders += [crashlyticsEnabled: true]
+        }
+        debug {
+            ext.alwaysUpdateBuildId = false
+        }
+    }
+
+    flavorDimensions "version"
+    productFlavors {
+        dev {
+            dimension "version"
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+            buildConfigField "String", "BASE_API_URL", '"https://api.coindesk.com/v1/bpi/currentprice.json"'
+        }
+        uat {
+            dimension "version"
+            applicationIdSuffix ".uat"
+            versionNameSuffix "-uat"
+            buildConfigField "String", "BASE_API_URL", '""'
+        }
+        prod {
+            dimension "version"
+            buildConfigField "String", "BASE_API_URL", '""'
+        }
+    }
+
+}
+
+
+dependencies {
+//    implementation project(Modules.commonRes)
+//    implementation project(Modules.data)
+//    implementation project(Modules.domain)
+//    implementation project(Modules.navigation)
+//    implementation project(Modules.featureSplashscreen)
+//    implementation project(Modules.featureHome)
+//    implementation project(Modules.featureSearch)
+//    implementation project(Modules.featureSetting)
+
+    implementation Deps.material
+    implementation Deps.koin
+    implementation Deps.koinViewModel
+    implementation Deps.appcompat
+    implementation Deps.navigationUi
+    implementation Deps.navigationFragment
+    implementation Deps.stetho
+    implementation Deps.coreKtx
+
+    debugImplementation Deps.chucker
+    releaseImplementation Deps.chuckerNoOp
+
+    testImplementation TestDeps.junit
+    testImplementation TestDeps.koin
+    testImplementation TestDeps.mockk
+}
