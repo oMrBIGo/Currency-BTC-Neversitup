@@ -32,7 +32,7 @@ android {
             dimension "version"
             applicationIdSuffix ".dev"
             versionNameSuffix "-dev"
-            buildConfigField "String", "BASE_API_URL", '"https://api.coindesk.com/v1/bpi/currentprice.json"'
+            buildConfigField "String", "BASE_API_URL", '"https://api.coindesk.com/v1/"'
         }
         uat {
             dimension "version"
@@ -50,14 +50,11 @@ android {
 
 
 dependencies {
-//    implementation project(Modules.commonRes)
-//    implementation project(Modules.data)
-//    implementation project(Modules.domain)
-//    implementation project(Modules.navigation)
-//    implementation project(Modules.featureSplashscreen)
-//    implementation project(Modules.featureHome)
-//    implementation project(Modules.featureSearch)
-//    implementation project(Modules.featureSetting)
+    implementation project(Modules.commonRes)
+    implementation project(Modules.data)
+    implementation project(Modules.domain)
+    implementation project(Modules.navigation)
+    implementation project(Modules.featureHome)
 
     implementation Deps.material
     implementation Deps.koin

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_medium">16dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_micro">4dp</dimen>
+
+    <dimen name="spacing01">0.1dp</dimen>
+    <dimen name="spacing05">0.5dp</dimen>
+    <dimen name="spacing1">1dp</dimen>
+    <dimen name="spacing2">2dp</dimen>
+    <dimen name="spacing3">3dp</dimen>
+    <dimen name="spacing4">4dp</dimen>
+    <dimen name="spacing5">5dp</dimen>
+    <dimen name="spacing6">6dp</dimen>
+    <dimen name="spacing10">10dp</dimen>
+    <dimen name="spacing12">12dp</dimen>
+    <dimen name="spacing14">14dp</dimen>
+    <dimen name="spacing15">15dp</dimen>
+    <dimen name="spacing18">18dp</dimen>
+    <dimen name="spacing20">20dp</dimen>
+    <dimen name="spacing21">21dp</dimen>
+    <dimen name="spacing22">22dp</dimen>
+    <dimen name="spacing26">26dp</dimen>
+    <dimen name="spacing28">28dp</dimen>
+    <dimen name="spacing30">30dp</dimen>
+    <dimen name="spacing32">32dp</dimen>
+    <dimen name="spacing33">33dp</dimen>
+    <dimen name="spacing36">36dp</dimen>
+    <dimen name="spacing40">40dp</dimen>
+    <dimen name="spacing44">44dp</dimen>
+    <dimen name="spacing48">48dp</dimen>
+    <dimen name="spacing58">58dp</dimen>
+    <dimen name="spacing60">60dp</dimen>
+    <dimen name="spacing65">65dp</dimen>
+    <dimen name="spacing69">69dp</dimen>
+    <dimen name="spacing72">72dp</dimen>
+    <dimen name="spacing78">78dp</dimen>
+    <dimen name="spacing80">80dp</dimen>
+    <dimen name="spacing82">82dp</dimen>
+    <dimen name="spacing85">85dp</dimen>
+    <dimen name="spacing92">92dp</dimen>
+    <dimen name="spacing97">97dp</dimen>
+    <dimen name="spacing128">128dp</dimen>
+    <dimen name="spacing136">136dp</dimen>
+    <dimen name="spacing140">140dp</dimen>
+
+    <dimen name="font_default">16sp</dimen>
+    <dimen name="font6">6sp</dimen>
+    <dimen name="font8">8sp</dimen>
+    <dimen name="font10">10sp</dimen>
+    <dimen name="font12">12sp</dimen>
+    <dimen name="font13">13sp</dimen>
+    <dimen name="font14">14sp</dimen>
+    <dimen name="font15">15sp</dimen>
+    <dimen name="font16">16sp</dimen>
+    <dimen name="font18">18sp</dimen>
+    <dimen name="font20">20sp</dimen>
+    <dimen name="font22">22sp</dimen>
+    <dimen name="font24">24sp</dimen>
+    <dimen name="font25">25sp</dimen>
+    <dimen name="font30">30sp</dimen>
+    <dimen name="font40">40sp</dimen>
+
+</resources>

@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.android.library'
+apply from: '../android_commons.gradle'
+apply plugin: 'kotlin-kapt'
+
+android {
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+kapt {
+    correctErrorTypes = true
+}
+
+dependencies {
+    implementation project(Modules.commonRes)
+    implementation project(Modules.navigation)
+    implementation project(Modules.domain)
+    implementation Deps.material
+    implementation Deps.constraintLayout
+    implementation Deps.recyclerview
+    implementation Deps.coil
+    implementation Deps.coilGif
+    implementation Deps.lifecycleExtensions
+    implementation Deps.coreKtx
+    implementation Deps.navigationUi
+    implementation Deps.navigationFragment
+    implementation Deps.koin
+    implementation Deps.koinViewModel
+    implementation Deps.swiperefreshlayout
+    implementation Deps.circleImageView
+    implementation Deps.dotsIndicator
+    implementation Deps.loopingViewpager
+    implementation Deps.imageSupport
+}

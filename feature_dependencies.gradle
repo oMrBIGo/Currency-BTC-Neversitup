@@ -3,6 +3,11 @@ apply from: '../../android_commons.gradle'
 
 dependencies {
 
+    implementation project(Modules.commonRes)
+    implementation project(Modules.commonUi)
+    implementation project(Modules.domain)
+    implementation project(Modules.navigation)
+
     implementation Deps.appcompat
     implementation Deps.coreKtx
     implementation Deps.recyclerview

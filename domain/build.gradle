@@ -1,0 +1,8 @@
+apply plugin: 'com.android.library'
+apply from: '../android_commons.gradle'
+
+dependencies {
+    implementation project(Modules.commonRes)
+    implementation Deps.koin
+    implementation Deps.retrofitGsonConverter
+}

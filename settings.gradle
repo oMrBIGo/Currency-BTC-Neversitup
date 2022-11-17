@@ -1,1 +1,7 @@
 include ':app'
+include ':common-res'
+include ':common-ui'
+include ':data'
+include ':domain'
+include ':features:home'
+include ':navigation'
