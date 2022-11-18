@@ -4,22 +4,22 @@ package org.nathit.currencybtc.data.model
 import com.google.gson.annotations.SerializedName
 
 data class CurrentPriceEntity(
-    @SerializedName("bpi")
-    val bpi: ArrayList<Bpi?>?,
+    @SerializedName("time")
+    val time: Time,
     @SerializedName("chartName")
     val chartName: String?,
     @SerializedName("disclaimer")
     val disclaimer: String?,
-    @SerializedName("time")
-    val time: ArrayList<Time?>?
+    @SerializedName("bpi")
+    val bpi: Bpi
 ) {
     data class Bpi(
         @SerializedName("EUR")
-        val eUR: ArrayList<EUR?>?,
+        val eUR: EUR,
         @SerializedName("GBP")
-        val gBP: ArrayList<GBP?>?,
+        val gBP: GBP,
         @SerializedName("USD")
-        val uSD: ArrayList<USD?>?
+        val uSD: USD
     ) {
         data class EUR(
             @SerializedName("code")
