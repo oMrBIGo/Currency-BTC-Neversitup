@@ -34,16 +34,6 @@ android {
             versionNameSuffix "-dev"
             buildConfigField "String", "BASE_API_URL", '"https://api.coindesk.com/v1/"'
         }
-        uat {
-            dimension "version"
-            applicationIdSuffix ".uat"
-            versionNameSuffix "-uat"
-            buildConfigField "String", "BASE_API_URL", '""'
-        }
-        prod {
-            dimension "version"
-            buildConfigField "String", "BASE_API_URL", '""'
-        }
     }
 
 }
