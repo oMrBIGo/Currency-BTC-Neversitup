@@ -5,5 +5,5 @@ import org.koin.dsl.module
 import org.nathit.currencybtc.home.HomeViewModel
 
 val featureHome = module {
-    viewModel { HomeViewModel() }
+    viewModel { HomeViewModel(get()) }
 }

@@ -9,6 +9,7 @@ import org.nathit.currencybtc.common.R
 import org.nathit.currencybtc.common.ui.model.AlertDialogUi
 import org.nathit.currencybtc.common.ui.model.ToolbarUi
 import org.nathit.currencybtc.common.ui.util.SingleLiveEvent
+import org.nathit.currencybtc.domain.model.CommonError
 import org.nathit.currencybtc.domain.usecase.SecurePreferencesUseCase
 
 abstract class BaseViewModel() : ViewModel() {
@@ -50,12 +51,23 @@ abstract class BaseViewModel() : ViewModel() {
     ) {
         createOneButtonDialogEvent(
             message = message,
-            titleRes = R.string.Error,
+            titleRes = R.string.Error_Default_title,
             messageRes = messageRes
         )
     }
 
     fun navigate(navigationCommand: NavigationCommand) {
         navigateEvent.value = navigationCommand
+    }
+
+    /** Set isHost = true on SplashScreenViewModel only for navigate to login page **/
+    fun handlerError(
+        error: CommonError,
+        onPositiveClicked: () -> Unit = {}
+    ) {
+        createOneButtonDialogEvent(
+            message = error.message,
+            onPositiveClicked = onPositiveClicked
+        )
     }
 }

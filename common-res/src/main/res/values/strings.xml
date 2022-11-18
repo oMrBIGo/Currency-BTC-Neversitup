@@ -4,5 +4,6 @@
 
     <string name="home_title">สกุลเงินบิตคอย(BTC)</string>
     <string name="ok">ตกลง</string>
-    <string name="Error">ขอโทษ, มีบางอย่างผิดพลาด</string>
+    <string name="Error.Default.title">ขอโทษ, มีบางอย่างผิดพลาด</string>
+    <string name="Error.Network.title">Network Error !!</string>
 </resources>
