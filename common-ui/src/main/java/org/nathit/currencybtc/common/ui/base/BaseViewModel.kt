@@ -32,7 +32,7 @@ abstract class BaseViewModel() : ViewModel() {
         message: String? = null,
         @StringRes titleRes: Int? = null,
         @StringRes messageRes: Int? = null,
-        @StringRes positiveActionRes: Int = R.string.ok,
+        @StringRes positiveActionRes: Int = R.string.agree,
         onPositiveClicked: () -> Unit = {}
     ) {
         alertDialogEvent.value = AlertDialogUi(

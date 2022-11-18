@@ -2,8 +2,9 @@
 <resources>
     <string name="api_key" translatable="false">"AIzaSyAn9RH-aqbA7NsZtvPsX74Y8RgVYOZ3x54"</string>
 
-    <string name="home_title">สกุลเงินบิตคอย(BTC)</string>
-    <string name="ok">ตกลง</string>
-    <string name="Error.Default.title">ขอโทษ, มีบางอย่างผิดพลาด</string>
+    <string name="home_title">CoinDesk</string>
+    <string name="agree">Agree</string>
+    <string name="Error.Default.title">Sorry, Something went wrong</string>
     <string name="Error.Network.title">Network Error !!</string>
+    <string name="home_rate_current_eur">current price : %s EUR</string>
 </resources>

@@ -11,6 +11,7 @@
     <color name="grey">#B9B9B9</color>
 
     <color name="background">#17181c</color>
+    <color name="background_blank">#111215</color>
 
     <color name="text_color">#FFFFFF</color>
     <color name="line_input">#323338</color>
