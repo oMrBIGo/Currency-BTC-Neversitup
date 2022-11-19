@@ -7,7 +7,6 @@ import org.nathit.currencybtc.common.ui.base.BaseViewModel
 import org.nathit.currencybtc.domain.model.CurrentPrice
 import org.nathit.currencybtc.domain.model.NetworkResponse
 import org.nathit.currencybtc.domain.usecase.HomeUseCase
-import org.nathit.currencybtc.domain.usecase.SecurePreferencesUseCase
 import java.text.DecimalFormat
 import kotlin.math.floor
 import kotlin.math.log10
@@ -52,4 +51,13 @@ class HomeViewModel(
         }
     }
 
+    fun fibonacci(n: Int): String {
+        val result = LongArray(n) // long ใช้เพื่อหลีกเลี่ยงจากการ overflow
+        result[1] = 1
+        // สร้างลำดับ fibonacci มาเก็บไว้ใน Array
+        for (i in 2 until n) {
+            result[i] = result[i - 1] + result[i - 2]
+        }
+        return result.contentToString() // แปลง Array เป็น String และส่งกลับ
+    }
 }

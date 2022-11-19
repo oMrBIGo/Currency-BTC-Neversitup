@@ -18,4 +18,7 @@
     <color name="hint_input">#B9B9B9</color>
     <color name="text_hint_input">#cdced3</color>
 
+    <color name="color_select">#FFFFFF</color>
+    <color name="color_no_select">#C1C1C1</color>
+
 </resources>

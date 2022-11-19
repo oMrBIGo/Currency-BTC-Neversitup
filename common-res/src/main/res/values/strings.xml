@@ -7,4 +7,29 @@
     <string name="Error.Default.title">Sorry, Something went wrong</string>
     <string name="Error.Network.title">Network Error !!</string>
     <string name="home_rate_current_eur">current price : %s EUR</string>
+
+    <!-- bottom navigation menu -->
+    <string name="menu_currency">Currency</string>
+    <string name="menu_convert">Convert</string>
+    <string name="menu_history">History</string>
+
+    <!-- Fibonacci -->
+    <string name="Fibonacci_title">program generate: Fibonacci</string>
+    <string name="Fibonacci_result">result -> %s</string>
+
+    <string name="Fibonacci_code">
+        <font fgcolor='#8BC34A'>/*** set variable n = 10 ***/</font>\n
+        \n
+        <font fgcolor='#bc7331'>fun</font> <font fgcolor='#eabd66'>fibonacci</font>(n: Int): String {\n
+        \n
+        \t\tval result = LongArray(n)\n
+        \t\tresult[<font fgcolor='#4e7593'>1</font>] = <font fgcolor='#4e7593'>1</font>\n
+        \n
+        \t\t<font fgcolor='#bc7331'>for</font> (i <font fgcolor='#bc7331'>in</font> <font fgcolor='#4e7593'>2</font> <font fgcolor='#eabd66'>until</font> n) {\n
+        \t\t\t\tresult[i] = result[i - <font fgcolor='#4e7593'>1</font>] + result[i - <font fgcolor='#4e7593'>2</font>]\n
+        \t\t}\n
+        \n
+        \t\t<font fgcolor='#bc7331'>return</font> result.<font fgcolor='#eabd66'>contentToString</font>()\n
+        }
+    </string>
 </resources>
