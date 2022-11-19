@@ -15,14 +15,18 @@
 
     <!-- Fibonacci -->
     <string name="Fibonacci_title">program generate: Fibonacci</string>
-    <string name="Fibonacci_result">result -> %s</string>
+
+    <!-- Primes -->
+    <string name="Prime_title">program generate: Prime Number</string>
+
+    <string name="result">result -> %s</string>
 
     <string name="Fibonacci_code">
         <font fgcolor='#8BC34A'>/*** set variable n = 10 ***/</font>\n
         \n
         <font fgcolor='#bc7331'>fun</font> <font fgcolor='#eabd66'>fibonacci</font>(n: Int): String {\n
         \n
-        \t\tval result = LongArray(n)\n
+        \t\t<font fgcolor='#bc7331'>val</font> result = LongArray(n)\n
         \t\tresult[<font fgcolor='#4e7593'>1</font>] = <font fgcolor='#4e7593'>1</font>\n
         \n
         \t\t<font fgcolor='#bc7331'>for</font> (i <font fgcolor='#bc7331'>in</font> <font fgcolor='#4e7593'>2</font> <font fgcolor='#eabd66'>until</font> n) {\n
@@ -30,6 +34,28 @@
         \t\t}\n
         \n
         \t\t<font fgcolor='#bc7331'>return</font> result.<font fgcolor='#eabd66'>contentToString</font>()\n
+        }
+    </string>
+
+    <string name="Prime_code">
+         <font fgcolor='#8BC34A'>/*** set variable n = 10 ***/</font>\n
+         \n
+         <font fgcolor='#bc7331'>fun</font> <font fgcolor='#eabd66'>primes</font>(n: Int): MutableList＜Int＞{ \n
+         \n
+         \t\t<font fgcolor='#bc7331'>val</font> li : MutableList＜Int＞ = mutableListOf()\n
+         \n
+         \t\t<font fgcolor='#bc7331'>for</font>(num <font fgcolor='#bc7331'>in</font> = <font fgcolor='#4e7593'>2</font>..n+= <font fgcolor='#4e7593'>1</font>){\n
+        \n
+         \t\t\t\t<font fgcolor='#bc7331'>for</font>(i <font fgcolor='#bc7331'>in</font> <font fgcolor='#4e7593'>2</font>..num){\n
+        \n
+         \t\t\t\t\t\t<font fgcolor='#bc7331'>if</font>(num % i == <font fgcolor='#4e7593'>0</font>){\n
+        \n
+         \t\t\t\t\t\t\t\t<font fgcolor='#bc7331'>if</font>(num==i) li.add(num) <font fgcolor='#bc7331'>else break</font>\n
+        \n
+         \t\t\t\t\t\t}\n
+         \t\t\t\t}\n
+         \t\t}\n
+         \t\t<font fgcolor='#bc7331'>return</font> li\n
         }
     </string>
 </resources>

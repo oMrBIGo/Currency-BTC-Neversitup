@@ -12,6 +12,7 @@ import kotlin.math.floor
 import kotlin.math.log10
 import kotlin.math.pow
 
+
 class HomeViewModel(
     private val homeUseCase: HomeUseCase
 ) : BaseViewModel() {
@@ -59,5 +60,17 @@ class HomeViewModel(
             result[i] = result[i - 1] + result[i - 2]
         }
         return result.contentToString() // แปลง Array เป็น String และส่งกลับ
+    }
+
+    fun primes(n : Int):MutableList<Int>{
+        val li : MutableList<Int> = mutableListOf()
+        for(num in 2..n+1){
+            for(i in 2..num){
+                if(num % i == 0){
+                    if(num==i) li.add(num) else break
+                }
+            }
+        }
+        return li
     }
 }

@@ -464,10 +464,78 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="@dimen/spacing10"
                                 android:textColor="@color/text_color"
-                                android:text="@{@string/Fibonacci_result(viewModel.fibonacci(10))}"
+                                android:text="@{@string/result(viewModel.fibonacci(10))}"
                                 android:textSize="@dimen/font14"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toBottomOf="@id/txv_Fibonacci_code_home" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Prime -->
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_Prime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@color/background"
+                        android:layout_marginTop="@dimen/spacing10"
+                        app:cardCornerRadius="@dimen/spacing_small"
+                        app:cardElevation="@dimen/spacing5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cv_Fibonacci">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/spacing15">
+
+                            <ImageView
+                                android:id="@+id/imv_bonus_Prime_home"
+                                android:layout_width="@dimen/spacing20"
+                                android:layout_height="@dimen/spacing20"
+                                android:src="@drawable/bonus"
+                                android:layout_marginTop="@dimen/spacing4"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txv_Prime_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/Prime_title"
+                                android:layout_marginStart="@dimen/spacing5"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/font14"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="@+id/imv_bonus_Prime_home"
+                                app:layout_constraintStart_toEndOf="@+id/imv_bonus_Prime_home"
+                                app:layout_constraintTop_toTopOf="@+id/imv_bonus_Prime_home" />
+
+                            <TextView
+                                android:id="@+id/txv_Prime_code_home"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing15"
+                                android:text="@string/Prime_code"
+                                android:textColor="@color/white"
+                                android:padding="@dimen/spacing15"
+                                app:layout_constraintTop_toBottomOf="@+id/txv_Prime_home"
+                                android:background="@color/background_blank"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent" />
+
+                            <TextView
+                                android:id="@+id/txv_Prime_result_home"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing10"
+                                android:textColor="@color/text_color"
+                                android:text="@{@string/result(viewModel.primes(10))}"
+                                android:textSize="@dimen/font14"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/txv_Prime_code_home" />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
