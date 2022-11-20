@@ -11,6 +11,8 @@
 - [koinViewModel] org.koin:koin-androidx-viewmodel:2.1.6
 - [retrofit] com.squareup.retrofit2:retrofit:2.9.0
 - [retrofitGsonConverter] com.squareup.retrofit2:converter-gson:2.9.0
+- [gson] com.google.code.gson:gson:2.8.6
+- [okhttp3] com.squareup.okhttp3:logging-interceptor
 
 [<img src="https://sv1.img.in.th/5xqT5.png">]()
 [<img src="https://sv1.img.in.th/5x8DJ.png">]()
