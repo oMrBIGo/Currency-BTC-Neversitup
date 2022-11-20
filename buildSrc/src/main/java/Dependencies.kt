@@ -37,7 +37,6 @@ object Versions {
     const val recyclerview = "1.1.0"
     const val constraintLayout = "2.0.0-rc1"
     const val coreKtx = "1.3.1"
-    const val stetho = "1.5.1"
     const val chucker = "3.5.2"
 }
 
