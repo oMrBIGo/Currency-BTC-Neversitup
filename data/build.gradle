@@ -23,7 +23,6 @@ dependencies {
     implementation Deps.retrofit
     implementation Deps.retrofitGsonConverter
     implementation Deps.okhttpLoggingInterceptor
-    implementation Deps.stetho
     implementation Deps.koin
     implementation Deps.lifecycleExtensions
     implementation Deps.coreKtx

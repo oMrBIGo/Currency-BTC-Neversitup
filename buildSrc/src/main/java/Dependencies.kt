@@ -79,7 +79,6 @@ object Deps {
     // log
     const val okhttpLoggingInterceptor =
         "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
-    const val stetho = "com.facebook.stetho:stetho-okhttp3:${Versions.stetho}"
     const val chucker = "com.github.chuckerteam.chucker:library:${Versions.chucker}"
     const val chuckerNoOp = "com.github.chuckerteam.chucker:library-no-op:${Versions.chucker}"
 }
