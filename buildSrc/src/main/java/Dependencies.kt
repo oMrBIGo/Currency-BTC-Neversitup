@@ -32,7 +32,6 @@ object Versions {
     const val koin = "2.1.6"
     const val navigation = "2.4.2"
     const val fragment = "1.2.5"
-    const val lifecycle = "2.2.0"
     const val appcompat = "1.2.0"
     const val recyclerview = "1.1.0"
     const val constraintLayout = "2.0.0-rc1"
