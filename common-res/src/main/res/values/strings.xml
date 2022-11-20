@@ -73,7 +73,7 @@
     <string name="convert_GBP_empty">0.0 GBP</string>
     <string name="convert_USD_empty">0.0 USD</string>
     <string name="convert_button">convert</string>
-    <string name="convert_EUR_BTC">15980.85 EUR = 1 (BTC Price updated on 20/11/2022)</string>
-    <string name="convert_GBP_BTC">13927.22 GBP = 1 (BTC Price updated on 20/11/2022)</string>
-    <string name="convert_USD_BTC">16557.37 USD = 1 (BTC Price updated on 20/11/2022)</string>
+    <string name="convert_EUR_BTC">15980.85 EUR = 1 BTC (Price updated on 20/11/2022)</string>
+    <string name="convert_GBP_BTC">13927.22 GBP = 1 BTC (Price updated on 20/11/2022)</string>
+    <string name="convert_USD_BTC">16557.37 USD = 1 BTC (Price updated on 20/11/2022)</string>
 </resources>
