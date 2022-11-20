@@ -36,11 +36,17 @@
                 android:layout_height="wrap_content"
                 android:background="@color/background">
 
+                <ImageView
+                    android:layout_width="@dimen/spacing30"
+                    android:layout_height="@dimen/spacing30"
+                    android:src="@drawable/coindesk" />
+
                 <TextView
                     textRes="@{viewModel.toolbar.titleRes}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start"
+                    android:layout_marginStart="@dimen/spacing5"
                     android:ellipsize="end"
                     android:gravity="center"
                     android:singleLine="true"
@@ -439,7 +445,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/spacing10"
                                 android:layout_marginEnd="@dimen/spacing10"
-                                android:text="@string/convert_BTC_empty"
+                                android:hint="@string/convert_BTC_empty"
                                 android:textAlignment="center"
                                 android:textColor="@color/text_color"
                                 android:textColorHint="@color/text_hint_input"
@@ -641,7 +647,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="@dimen/spacing10"
                                 android:layout_marginEnd="@dimen/spacing10"
-                                android:text="@string/convert_BTC_empty"
+                                android:hint="@string/convert_BTC_empty"
                                 android:textAlignment="center"
                                 android:textColor="@color/text_color"
                                 android:textColorHint="@color/text_hint_input"

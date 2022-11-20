@@ -25,25 +25,6 @@ dependencies {
     implementation Deps.okhttpLoggingInterceptor
     implementation Deps.stetho
     implementation Deps.koin
-    implementation Deps.coroutinesCore
-    implementation Deps.coroutinesAndroid
     implementation Deps.lifecycleExtensions
     implementation Deps.coreKtx
-    implementation Deps.preference
-    implementation Deps.roomRuntime
-    implementation Deps.roomKtx
-    implementation Deps.store
-    implementation Deps.security
-    kapt Deps.roomCompiler
-
-    testImplementation TestDeps.junit
-    testImplementation TestDeps.koin
-    testImplementation TestDeps.mockWebServer
-    testImplementation TestDeps.mockk
-    testImplementation TestDeps.coroutinesTest
-    androidTestImplementation TestDeps.testRunner
-    androidTestImplementation TestDeps.junit
-    androidTestImplementation TestDeps.koin
-    androidTestImplementation TestDeps.archCoreTest
-    androidTestImplementation TestDeps.mockkAndroid
 }

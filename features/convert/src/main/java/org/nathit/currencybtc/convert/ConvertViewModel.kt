@@ -1,7 +1,7 @@
 package org.nathit.currencybtc.convert
 
+import NavigationCommand
 import org.nathit.currencybtc.common.ui.base.BaseViewModel
-import java.text.DecimalFormat
 
 class ConvertViewModel : BaseViewModel() {
 

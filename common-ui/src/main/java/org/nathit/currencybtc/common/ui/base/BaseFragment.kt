@@ -1,5 +1,6 @@
 package org.nathit.currencybtc.common.ui.base
 
+import NavigationCommand
 import android.content.res.Configuration
 import android.os.Bundle
 import android.util.Log
@@ -44,7 +45,7 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding> : Fragment
         }
         binding.apply {
             lifecycleOwner = viewLifecycleOwner
-            setVariable( getViewModelBindingVariable(), viewModel)
+            setVariable(getViewModelBindingVariable(), viewModel)
         }
         return binding.root
     }
@@ -92,7 +93,7 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding> : Fragment
         viewModel.progressDialogEvent.observeSingle(viewLifecycleOwner, Observer {
             if (progressDialog != null && progressDialog!!.isShowing && !it) {
                 progressDialog?.dismiss()
-            } else if(it) {
+            } else if (it) {
                 progressDialog = ProgressDialog(requireContext())
                 progressDialog?.show()
             }

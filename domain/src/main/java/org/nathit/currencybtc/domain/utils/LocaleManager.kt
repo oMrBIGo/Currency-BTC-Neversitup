@@ -1,7 +1,6 @@
 package org.nathit.currencybtc.domain.utils
 
 import android.content.Context
-import java.util.*
 
 class LocaleManager {
     companion object {

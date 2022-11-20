@@ -6,7 +6,6 @@ import org.nathit.currencybtc.data.remote.home.HomeService
 import org.nathit.currencybtc.data.utils.NetworkResponseAdapterFactory
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.http.GET
 
 fun createRemoteModule(baseApiUrl: String) = module {
     single(named("retrofit")) {

@@ -1,5 +1,7 @@
 package org.nathit.currencybtc.home
 
+import NavigationCommand
+import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.launch
@@ -62,12 +64,12 @@ class HomeViewModel(
         return result.contentToString() // แปลง Array เป็น String และส่งกลับ
     }
 
-    fun primes(n : Int):MutableList<Int>{
-        val li : MutableList<Int> = mutableListOf()
-        for(num in 2..n+1){
-            for(i in 2..num){
-                if(num % i == 0){
-                    if(num==i) li.add(num) else break
+    fun primes(n: Int): MutableList<Int> {
+        val li: MutableList<Int> = mutableListOf()
+        for (num in 2..n + 1) {
+            for (i in 2..num) {
+                if (num % i == 0) {
+                    if (num == i) li.add(num) else break
                 }
             }
         }

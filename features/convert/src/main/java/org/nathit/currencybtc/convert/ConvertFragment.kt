@@ -53,7 +53,7 @@ class ConvertFragment : BaseFragment<ConvertViewModel, FragmentConvertBinding>()
 
     fun convertUSDtoBTC() {
         if (!binding.etAmountUSD.text.toString().isNullOrEmpty()) {
-            val usd = binding.etAmountEur.text.toString().toDouble()
+            val usd = binding.etAmountUSD.text.toString().toDouble()
             val btc = 0.000060 * usd
             val formatter = DecimalFormat("#,##0.0#####")
             formatter.groupingSize = 1000

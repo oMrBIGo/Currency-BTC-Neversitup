@@ -8,6 +8,6 @@ import retrofit2.http.GET
 interface HomeService {
 
     @GET("bpi/currentprice.json")
-    suspend fun getCurrentPrice(): NetworkResponse<CurrentPriceEntity,CommonError>
+    suspend fun getCurrentPrice(): NetworkResponse<CurrentPriceEntity, CommonError>
 
 }

@@ -26,7 +26,10 @@ internal class NetworkResponseCall<S : Any, E : Any>(
                 if (response.isSuccessful) {
                     if (body != null) {
                         /** Response is successful but the responseStatus code success **/
-                        callback.onResponse(this@NetworkResponseCall, Response.success(NetworkResponse.Success(body)))
+                        callback.onResponse(
+                            this@NetworkResponseCall,
+                            Response.success(NetworkResponse.Success(body))
+                        )
                     } else {
                         /** Response is successful but the body is null **/
                         callback.onResponse(

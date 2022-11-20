@@ -2,6 +2,7 @@ package org.nathit.currencybtc.home
 
 import android.os.Handler
 import android.os.Looper
+import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.launch
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -36,12 +37,5 @@ class HomeFragment : BaseFragment<BaseViewModel, FragmentHomeBinding>() {
 
     private fun initToolbar() {
         viewModel.initToolbar(titleRes = R.string.home_title)
-    }
-
-    /*** Add History ***/
-    fun addHistoryEur(code: String, description: String, rate: String, rateFloat: Double) {
-        lifecycleScope.launch {
-            //val eur = Eur(code = code, description = description, rate = rate, rateFloat = rateFloat)
-        }
     }
 }

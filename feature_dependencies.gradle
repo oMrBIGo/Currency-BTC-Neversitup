@@ -18,20 +18,4 @@ dependencies {
     implementation Deps.koinViewModel
     implementation Deps.navigationUi
     implementation Deps.navigationFragment
-    implementation Deps.circleImageView
-    implementation Deps.viewpager2
-    implementation Deps.scrollingpagerindicator
-    implementation Deps.imageSupport
-    implementation Deps.dotsIndicator
-    implementation Deps.loopingViewpager
-    implementation Deps.flexbox
-    implementation Deps.swiperefreshlayout
-    implementation Deps.browser
-
-
-
-    testImplementation TestDeps.junit
-    testImplementation TestDeps.mockk
-    testImplementation TestDeps.coroutinesTest
-    testImplementation TestDeps.archCoreTest
 }

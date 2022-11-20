@@ -8,6 +8,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 
 class SingleLiveEvent<T> : MutableLiveData<T>() {
     private val mConsumed = AtomicBoolean(false)
+
     @MainThread
     fun observeSingle(owner: LifecycleOwner, observer: Observer<T>) {
         // Observe the internal MutableLiveData

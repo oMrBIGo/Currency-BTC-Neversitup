@@ -13,8 +13,3 @@ android {
 kapt {
     correctErrorTypes = true
 }
-
-dependencies {
-    testImplementation TestDeps.junit
-    testImplementation TestDeps.mockk
-}

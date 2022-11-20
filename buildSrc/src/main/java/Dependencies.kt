@@ -28,9 +28,7 @@ object Versions {
     const val coroutines = "1.3.8"
     const val okhttp = "4.9.0"
     const val retrofit = "2.9.0"
-    const val room = "2.2.5"
     const val gson = "2.8.6"
-    const val preference = "1.1.1"
     const val koin = "2.1.6"
     const val navigation = "2.4.2"
     const val fragment = "1.2.5"
@@ -41,25 +39,6 @@ object Versions {
     const val coreKtx = "1.3.1"
     const val stetho = "1.5.1"
     const val chucker = "3.5.2"
-    const val store = "4.0.0-alpha06"
-    const val coil = "1.0.0-rc3"
-    const val timber = "4.7.1"
-    const val junit = "1.1.0"
-    const val robolectric = "4.3.1"
-    const val mockK = "1.9.3"
-    const val test = "1.2.0"
-    const val archCore = "2.1.0"
-    const val espresso = "3.1.0"
-    const val security = "1.1.0-alpha02"
-    const val circleImageView = "3.1.0"
-    const val viewpager2 = "1.0.0"
-    const val scrollingpagerindicator = "1.2.1"
-    const val imageSupport = "2.0.0"
-    const val dotsIndicator = "4.3"
-    const val loopingViewpager = "0.2.0"
-    const val flexbox = "2.0.1"
-    const val swiperefreshlayout = "1.0.0"
-    const val browser = "1.3.0"
 }
 
 object Deps {
@@ -91,36 +70,11 @@ object Deps {
     const val lifecycleViewModelKtx =
         "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val material = "com.google.android.material:material:${Versions.material}"
-    const val coil = "io.coil-kt:coil:${Versions.coil}"
-    const val coilGif = "io.coil-kt:coil-gif:${Versions.coil}"
-    const val circleImageView = "de.hdodenhof:circleimageview:${Versions.circleImageView}"
-    const val viewpager2 = "androidx.viewpager2:viewpager2:${Versions.viewpager2}"
-    const val scrollingpagerindicator =
-        "ru.tinkoff.scrollingpagerindicator:scrollingpagerindicator:${Versions.scrollingpagerindicator}"
-    const val dotsIndicator = "com.tbuonomo:dotsindicator:${Versions.dotsIndicator}"
-    const val loopingViewpager =
-        "com.kenilt.loopingviewpager:loopingviewpager:${Versions.loopingViewpager}"
-    const val flexbox = "com.google.android:flexbox:${Versions.flexbox}"
-    const val swiperefreshlayout =
-        "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swiperefreshlayout}"
-    const val browser =
-        "androidx.browser:browser:${Versions.browser}"
 
     // data
-    const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
-    const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
-    const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
-    const val preference = "androidx.preference:preference:${Versions.preference}"
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val retrofitGsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
-    const val coroutinesCore =
-        "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
-    const val coroutinesAndroid =
-        "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
-    const val store = "com.dropbox.mobile.store:store4:${Versions.store}"
-    const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
     const val gson = "com.google.code.gson:gson:${Versions.gson}"
-    const val security = "androidx.security:security-crypto:${Versions.security}"
 
     // log
     const val okhttpLoggingInterceptor =
@@ -128,25 +82,4 @@ object Deps {
     const val stetho = "com.facebook.stetho:stetho-okhttp3:${Versions.stetho}"
     const val chucker = "com.github.chuckerteam.chucker:library:${Versions.chucker}"
     const val chuckerNoOp = "com.github.chuckerteam.chucker:library-no-op:${Versions.chucker}"
-
-    //ImageBadge
-    const val imageSupport = "io.github.nikartm:image-support:${Versions.imageSupport}"
-
-}
-
-object TestDeps {
-    const val testCore = "androidx.test:core:${Versions.test}"
-    const val testRunner = "androidx.test:runner:${Versions.test}"
-    const val testRules = "androidx.test:rules:${Versions.test}"
-    const val archCoreTest = "androidx.arch.core:core-testing:${Versions.archCore}"
-    const val roomTesting = "androidx.room:room-testing:${Versions.room}"
-    const val coroutinesTest =
-        "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines}"
-    const val junit = "androidx.test.ext:junit:${Versions.junit}"
-    const val robolectric = "org.robolectric:robolectric:${Versions.robolectric}"
-    const val mockk = "io.mockk:mockk:${Versions.mockK}"
-    const val mockkAndroid = "io.mockk:mockk-android:${Versions.mockK}"
-    const val mockWebServer = "com.squareup.okhttp3:mockwebserver:${Versions.okhttp}"
-    const val koin = "org.koin:koin-test:${Versions.koin}"
-    const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso}"
 }

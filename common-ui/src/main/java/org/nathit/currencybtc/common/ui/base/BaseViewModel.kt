@@ -4,13 +4,11 @@ import NavigationCommand
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
-import org.koin.java.KoinJavaComponent
 import org.nathit.currencybtc.common.R
 import org.nathit.currencybtc.common.ui.model.AlertDialogUi
 import org.nathit.currencybtc.common.ui.model.ToolbarUi
 import org.nathit.currencybtc.common.ui.util.SingleLiveEvent
 import org.nathit.currencybtc.domain.model.CommonError
-import org.nathit.currencybtc.domain.usecase.SecurePreferencesUseCase
 
 abstract class BaseViewModel() : ViewModel() {
     val progressDialogEvent by lazy { SingleLiveEvent<Boolean>() }

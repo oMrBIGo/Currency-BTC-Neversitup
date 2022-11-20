@@ -53,13 +53,8 @@ dependencies {
     implementation Deps.appcompat
     implementation Deps.navigationUi
     implementation Deps.navigationFragment
-    implementation Deps.stetho
     implementation Deps.coreKtx
 
     debugImplementation Deps.chucker
     releaseImplementation Deps.chuckerNoOp
-
-    testImplementation TestDeps.junit
-    testImplementation TestDeps.koin
-    testImplementation TestDeps.mockk
 }
