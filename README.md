@@ -9,10 +9,15 @@
 - [REST API] (GET) https://api.coindesk.com/v1/bpi/currentprice.json
 - [koin] org.koin:koin-android:2.1.6
 - [koinViewModel] org.koin:koin-androidx-viewmodel:2.1.6
-- [retrofit] com.squareup.retrofit2:retrofit:2.9.0
-- [retrofitGsonConverter] com.squareup.retrofit2:converter-gson:2.9.0
-- [gson] com.google.code.gson:gson:2.8.6
-- [okhttp3] com.squareup.okhttp3:logging-interceptor
+- [retrofit] com.squareup.retrofit2:retrofit:2.9.0 <https://github.com/square/retrofit>
+- [retrofitGsonConverter] com.squareup.retrofit2:converter-gson:2.9.0 <https://github.com/square/retrofit/tree/master/retrofit-converters/gson>
+- [gson] com.google.code.gson:gson:2.8.6 <https://github.com/google/gson>
+- [okhttp3] com.squareup.okhttp3:logging-interceptor:4.9.0 <https://github.com/square/okhttp>
+- [chucker] com.github.chuckerteam.chucker:library:3.5.2 <https://github.com/ChuckerTeam/chucker>
+- [chuckerNoOp] com.github.chuckerteam.chucker:library-no-op:3.5.2 <https://github.com/ChuckerTeam/chucker>
+- [lifecycleExtensions] androidx.lifecycle:lifecycle-extensions:2.2.0
+- [lifecycleViewModelKtx] androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0
 
 [<img src="https://sv1.img.in.th/5xqT5.png">]()
+
 [<img src="https://sv1.img.in.th/5x8DJ.png">]()
