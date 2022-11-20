@@ -12,7 +12,6 @@ dependencies {
     implementation Deps.coreKtx
     implementation Deps.recyclerview
     implementation Deps.constraintLayout
-    implementation Deps.lifecycleViewModelKtx
     implementation Deps.material
     implementation Deps.koin
     implementation Deps.koinViewModel

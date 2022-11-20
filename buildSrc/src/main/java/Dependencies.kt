@@ -65,9 +65,6 @@ object Deps {
     const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
     const val fragment = "androidx.fragment:fragment:${Versions.fragment}"
     const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragment}"
-    const val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
-    const val lifecycleViewModelKtx =
-        "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifecycle}"
     const val material = "com.google.android.material:material:${Versions.material}"
 
     // data

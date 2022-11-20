@@ -24,6 +24,5 @@ dependencies {
     implementation Deps.retrofitGsonConverter
     implementation Deps.okhttpLoggingInterceptor
     implementation Deps.koin
-    implementation Deps.lifecycleExtensions
     implementation Deps.coreKtx
 }
