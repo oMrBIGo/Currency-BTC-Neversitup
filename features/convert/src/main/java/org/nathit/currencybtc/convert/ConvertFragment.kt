@@ -39,7 +39,7 @@ class ConvertFragment : BaseFragment<ConvertViewModel, FragmentConvertBinding>()
     }
 
     fun convertGBPtoBTC() {
-        if (!binding.etAmountEur.text.toString().isNullOrEmpty()) {
+        if (!binding.etAmountGBP.text.toString().isNullOrEmpty()) {
             val gbp = binding.etAmountGBP.text.toString().toDouble()
             val btc = 0.000072 * gbp
             val formatter = DecimalFormat("#,##0.0#####")
