@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_convert"
+    app:startDestination="@id/convertFragment">
+
+    <fragment
+        android:id="@+id/convertFragment"
+        android:name="org.nathit.currencybtc.convert.ConvertFragment">
+
+        <action
+            android:id="@+id/action_convertFragment_to_nav_main"
+            app:destination="@id/nav_main"
+            app:popUpTo="@+id/nav_convert"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+
+</navigation>

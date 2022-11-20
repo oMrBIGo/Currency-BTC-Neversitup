@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="org.nathit.currencybtc.convert.ConvertFragment" />
+
+        <variable
+            name="viewModel"
+            type="org.nathit.currencybtc.convert.ConvertViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_blank">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_convert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:elevation="0dp"
+            android:paddingTop="@dimen/spacing2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar_convert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background">
+
+                <TextView
+                    textRes="@{viewModel.toolbar.titleRes}"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/font18"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/menu_home"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar_convert">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="@dimen/spacing10">
+
+                <!-- Convert EUR -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_Convert_EUR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="@dimen/spacing_small"
+                    app:cardElevation="@dimen/spacing5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing15">
+
+                        <LinearLayout
+                            android:id="@+id/linear_Convert"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing20"
+                                android:layout_height="@dimen/spacing20"
+                                android:src="@drawable/bitcoin" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:text="CONVERT CURRENCY FROM EUR TO BITCOIN"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/font14"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_Convert_EUR"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing15"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linear_Convert">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing60"
+                                    android:layout_height="@dimen/spacing60"
+                                    android:src="@drawable/eur" />
+
+                                <TextView
+                                    android:id="@+id/txv_Convert_EUR"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/spacing10"
+                                    android:text="@string/convert_eur_title"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/font20"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing40"
+                                android:layout_height="@dimen/spacing40"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/spacing60"
+                                android:layout_marginEnd="@dimen/spacing60"
+                                android:src="@drawable/arrow_convert" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing60"
+                                    android:layout_height="@dimen/spacing60"
+                                    android:src="@drawable/bitcoin" />
+
+                                <TextView
+                                    android:id="@+id/txv_Convert_BitCoin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/spacing10"
+                                    android:text="@string/convert_BTC_title"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/font20"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing15"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="@+id/linear_Convert_EUR"
+                            app:layout_constraintStart_toStartOf="@+id/linear_Convert_EUR"
+                            app:layout_constraintTop_toBottomOf="@+id/linear_Convert_EUR">
+
+                            <!-- input Price EUR -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txv_amount_eur"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:layout_marginEnd="@dimen/spacing10"
+                                android:background="@drawable/bg_round"
+                                android:enabled="true"
+                                android:textColorHint="@color/text_color"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toStartOf="@+id/btn_convert"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etAmountEur"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:hint="@string/convert_eur_empty"
+                                    android:inputType="number"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/text_color"
+                                    android:textColorHint="@color/text_hint_input"
+                                    android:textSize="@dimen/font16"
+                                    android:textStyle="bold" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- button convert EUR -> BTC -->
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btn_convert"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="#42C547"
+                                android:gravity="center"
+                                android:onClick="@{() -> listener.convertEURtoBTC()}"
+                                android:text="@string/convert_button"
+                                android:textSize="@dimen/font12"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <!-- Results BTC -->
+                            <TextView
+                                android:id="@+id/etBtcEur"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:layout_marginEnd="@dimen/spacing10"
+                                android:hint="@string/convert_BTC_empty"
+                                android:textAlignment="center"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_hint_input"
+                                android:textSize="@dimen/font16"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/btn_convert"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing10"
+                            android:text="@string/convert_EUR_BTC"
+                            android:textColor="@color/text_hint_input"
+                            android:textSize="@dimen/font10"
+                            app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+                            app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Convert GBP -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_Convert_GBP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing15"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="@dimen/spacing_small"
+                    app:cardElevation="@dimen/spacing5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_Convert_EUR">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing15">
+
+                        <LinearLayout
+                            android:id="@+id/linear_Convert_GBP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing20"
+                                android:layout_height="@dimen/spacing20"
+                                android:src="@drawable/bitcoin" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:text="CONVERT CURRENCY FROM GBP TO BITCOIN"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/font14"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_Convert_GBP_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing15"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linear_Convert_GBP">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing60"
+                                    android:layout_height="@dimen/spacing60"
+                                    android:src="@drawable/gbp" />
+
+                                <TextView
+                                    android:id="@+id/txv_Convert_GBP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/spacing10"
+                                    android:text="@string/convert_GBP_title"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/font20"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing40"
+                                android:layout_height="@dimen/spacing40"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/spacing60"
+                                android:layout_marginEnd="@dimen/spacing60"
+                                android:src="@drawable/arrow_convert" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing60"
+                                    android:layout_height="@dimen/spacing60"
+                                    android:src="@drawable/bitcoin" />
+
+                                <TextView
+                                    android:id="@+id/txv_Convert_BitCoin_GBP"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/spacing10"
+                                    android:text="@string/convert_BTC_title"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/font20"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_GBP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing15"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="@+id/linear_Convert_GBP_1"
+                            app:layout_constraintStart_toStartOf="@+id/linear_Convert_GBP_1"
+                            app:layout_constraintTop_toBottomOf="@+id/linear_Convert_GBP_1">
+
+                            <!-- input Price GBP -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txv_amount_GBP"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:layout_marginEnd="@dimen/spacing10"
+                                android:background="@drawable/bg_round"
+                                android:enabled="true"
+                                android:textColorHint="@color/text_color"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toStartOf="@+id/btn_convert_GBP"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etAmountGBP"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:hint="@string/convert_GBP_empty"
+                                    android:inputType="number"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/text_color"
+                                    android:textColorHint="@color/text_hint_input"
+                                    android:textSize="@dimen/font16"
+                                    android:textStyle="bold" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- button convert GBP -> BTC -->
+                            <Button
+                                android:id="@+id/btn_convert_GBP"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="#42C547"
+                                android:gravity="center"
+                                android:onClick="@{() -> listener.convertGBPtoBTC()}"
+                                android:text="@string/convert_button"
+                                android:textSize="@dimen/font12"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <!-- Results BTC -->
+                            <TextView
+                                android:id="@+id/etBtcGBP"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:layout_marginEnd="@dimen/spacing10"
+                                android:text="@string/convert_BTC_empty"
+                                android:textAlignment="center"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_hint_input"
+                                android:textSize="@dimen/font16"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/btn_convert_GBP"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing10"
+                            android:text="@string/convert_GBP_BTC"
+                            android:textColor="@color/text_hint_input"
+                            android:textSize="@dimen/font10"
+                            app:layout_constraintEnd_toEndOf="@+id/constraintLayout_GBP"
+                            app:layout_constraintStart_toStartOf="@+id/constraintLayout_GBP"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_GBP" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Convert USD -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_Convert_USD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing15"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="@dimen/spacing_small"
+                    app:cardElevation="@dimen/spacing5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cv_Convert_GBP">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing15">
+
+                        <LinearLayout
+                            android:id="@+id/linear_Convert_USD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing20"
+                                android:layout_height="@dimen/spacing20"
+                                android:src="@drawable/bitcoin" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:text="CONVERT CURRENCY FROM USD TO BITCOIN"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/font14"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linear_Convert_USD_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing15"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linear_Convert_USD">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing60"
+                                    android:layout_height="@dimen/spacing60"
+                                    android:src="@drawable/usd" />
+
+                                <TextView
+                                    android:id="@+id/txv_Convert_USD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/spacing10"
+                                    android:text="@string/convert_USD_title"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/font20"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <ImageView
+                                android:layout_width="@dimen/spacing40"
+                                android:layout_height="@dimen/spacing40"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/spacing60"
+                                android:layout_marginEnd="@dimen/spacing60"
+                                android:src="@drawable/arrow_convert" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing60"
+                                    android:layout_height="@dimen/spacing60"
+                                    android:src="@drawable/bitcoin" />
+
+                                <TextView
+                                    android:id="@+id/txv_Convert_BitCoin_USD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/spacing10"
+                                    android:text="@string/convert_BTC_title"
+                                    android:textColor="@color/text_color"
+                                    android:textSize="@dimen/font20"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/constraintLayout_USD"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing15"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="@+id/linear_Convert_USD_1"
+                            app:layout_constraintStart_toStartOf="@+id/linear_Convert_USD_1"
+                            app:layout_constraintTop_toBottomOf="@+id/linear_Convert_USD_1">
+
+                            <!-- input Price USD -->
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/txv_amount_USD"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:layout_marginEnd="@dimen/spacing10"
+                                android:background="@drawable/bg_round"
+                                android:enabled="true"
+                                android:textColorHint="@color/text_color"
+                                app:hintEnabled="false"
+                                app:layout_constraintEnd_toStartOf="@+id/btn_convert_USD"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/etAmountUSD"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:hint="@string/convert_USD_empty"
+                                    android:inputType="number"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/text_color"
+                                    android:textColorHint="@color/text_hint_input"
+                                    android:textSize="@dimen/font16"
+                                    android:textStyle="bold" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- button convert USD -> BTC -->
+                            <Button
+                                android:id="@+id/btn_convert_USD"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="#42C547"
+                                android:gravity="center"
+                                android:onClick="@{() -> listener.convertUSDtoBTC()}"
+                                android:text="@string/convert_button"
+                                android:textSize="@dimen/font12"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <!-- Results BTC -->
+                            <TextView
+                                android:id="@+id/etBtcUSD"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing10"
+                                android:layout_marginEnd="@dimen/spacing10"
+                                android:text="@string/convert_BTC_empty"
+                                android:textAlignment="center"
+                                android:textColor="@color/text_color"
+                                android:textColorHint="@color/text_hint_input"
+                                android:textSize="@dimen/font16"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/btn_convert_USD"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing10"
+                            android:text="@string/convert_USD_BTC"
+                            android:textColor="@color/text_hint_input"
+                            android:textSize="@dimen/font10"
+                            app:layout_constraintEnd_toEndOf="@+id/constraintLayout_USD"
+                            app:layout_constraintStart_toStartOf="@+id/constraintLayout_USD"
+                            app:layout_constraintTop_toBottomOf="@+id/constraintLayout_USD" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <include
+            android:id="@+id/menu_home"
+            layout="@layout/view_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:currencyAction="@{viewModel.displayHome}"
+            app:isConvertSelected="@{true}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

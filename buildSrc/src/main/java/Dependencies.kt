@@ -10,6 +10,7 @@ object Modules {
     const val commonUi = ":common-ui"
     const val commonRes = ":common-res"
     const val featureHome = ":features:home"
+    const val featureConvert = ":features:convert"
 }
 
 object Releases {

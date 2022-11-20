@@ -8,6 +8,14 @@
         android:id="@+id/homeFragment"
         android:name="org.nathit.currencybtc.home.HomeFragment">
 
+        <action
+            android:id="@+id/action_homeFragment_to_nav_convert"
+            app:destination="@id/nav_convert"
+            app:popUpTo="@+id/nav_main"
+            app:popUpToInclusive="true" />
+
     </fragment>
+
+    <include app:graph="@navigation/nav_convert"/>
 
 </navigation>

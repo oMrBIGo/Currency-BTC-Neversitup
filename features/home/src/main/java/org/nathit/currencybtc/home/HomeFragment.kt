@@ -32,18 +32,16 @@ class HomeFragment : BaseFragment<BaseViewModel, FragmentHomeBinding>() {
                 mainHandler.postDelayed(this, 60 * 1000)
             }
         })
-
-        viewModel.fibonacci(10)
     }
 
     private fun initToolbar() {
         viewModel.initToolbar(titleRes = R.string.home_title)
     }
 
+    /*** Add History ***/
     fun addHistoryEur(code: String, description: String, rate: String, rateFloat: Double) {
         lifecycleScope.launch {
             //val eur = Eur(code = code, description = description, rate = rate, rateFloat = rateFloat)
         }
     }
-
 }

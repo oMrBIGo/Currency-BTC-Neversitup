@@ -45,6 +45,7 @@ dependencies {
     implementation project(Modules.domain)
     implementation project(Modules.navigation)
     implementation project(Modules.featureHome)
+    implementation project(Modules.featureConvert)
 
     implementation Deps.material
     implementation Deps.koin

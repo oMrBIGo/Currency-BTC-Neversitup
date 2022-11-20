@@ -1,0 +1,20 @@
+apply from: '../../feature_dependencies.gradle'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android'
+
+android {
+
+    buildFeatures {
+        dataBinding = true
+    }
+}
+
+kapt {
+    correctErrorTypes = true
+}
+
+dependencies {
+    testImplementation TestDeps.junit
+    testImplementation TestDeps.mockk
+}

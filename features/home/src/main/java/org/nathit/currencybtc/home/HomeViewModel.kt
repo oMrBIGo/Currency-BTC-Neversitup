@@ -73,4 +73,12 @@ class HomeViewModel(
         }
         return li
     }
+
+    val displayConvert: () -> Unit = {
+        navigate(
+            NavigationCommand.To(
+                HomeFragmentDirections.actionHomeFragmentToNavConvert()
+            )
+        )
+    }
 }

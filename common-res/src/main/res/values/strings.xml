@@ -2,7 +2,10 @@
 <resources>
     <string name="api_key" translatable="false">"AIzaSyAn9RH-aqbA7NsZtvPsX74Y8RgVYOZ3x54"</string>
 
+    <!-- Toolbar -->
     <string name="home_title">CoinDesk</string>
+    <string name="convert_title">Convert Bitcoin</string>
+
     <string name="agree">Agree</string>
     <string name="Error.Default.title">Sorry, Something went wrong</string>
     <string name="Error.Network.title">Network Error !!</string>
@@ -19,8 +22,7 @@
     <!-- Primes -->
     <string name="Prime_title">program generate: Prime Number</string>
 
-    <string name="result">result -> %s</string>
-
+    <!-- Program Generate -->
     <string name="Fibonacci_code">
         <font fgcolor='#8BC34A'>/*** set variable n = 10 ***/</font>\n
         \n
@@ -58,4 +60,20 @@
          \t\t<font fgcolor='#bc7331'>return</font> li\n
         }
     </string>
+
+    <string name="result">result -> %s</string>
+
+    <!-- Convert -->
+    <string name="convert_eur_title">EUR</string>
+    <string name="convert_GBP_title">GBP</string>
+    <string name="convert_USD_title">USD</string>
+    <string name="convert_BTC_title">BTC</string>
+    <string name="convert_BTC_empty">0.0 BTC</string>
+    <string name="convert_eur_empty">0.0 EUR</string>
+    <string name="convert_GBP_empty">0.0 GBP</string>
+    <string name="convert_USD_empty">0.0 USD</string>
+    <string name="convert_button">convert</string>
+    <string name="convert_EUR_BTC">15980.85 EUR = 1 (BTC Price updated on 20/11/2022)</string>
+    <string name="convert_GBP_BTC">13927.22 GBP = 1 (BTC Price updated on 20/11/2022)</string>
+    <string name="convert_USD_BTC">16557.37 USD = 1 (BTC Price updated on 20/11/2022)</string>
 </resources>
