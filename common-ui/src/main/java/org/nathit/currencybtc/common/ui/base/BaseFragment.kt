@@ -100,21 +100,6 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding> : Fragment
         })
     }
 
-    private fun setStatusBar() {
-        requireActivity().window.statusBarColor =
-            ContextCompat.getColor(requireContext(), R.color.background)
-        when (context?.resources?.configuration?.uiMode?.and(Configuration.UI_MODE_NIGHT_MASK)) {
-            Configuration.UI_MODE_NIGHT_YES -> {
-            }
-            Configuration.UI_MODE_NIGHT_NO -> {
-                requireActivity().window.decorView.systemUiVisibility =
-                    View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
-            }
-            Configuration.UI_MODE_NIGHT_UNDEFINED -> {
-            }
-        }
-    }
-
     fun onBackPress() {
         requireActivity().onBackPressedDispatcher.addCallback(this,
             object : OnBackPressedCallback(true) {
@@ -122,13 +107,5 @@ abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding> : Fragment
                     requireActivity().finish()
                 }
             })
-    }
-
-    fun <T> savedStateHandle(key: String): MutableLiveData<T>? {
-        return findNavController().currentBackStackEntry?.savedStateHandle?.getLiveData<T>(key)
-    }
-
-    fun <T> setSavedStateHandle(key: String, obj: T) {
-        findNavController().previousBackStackEntry?.savedStateHandle?.set(key, obj)
     }
 }
