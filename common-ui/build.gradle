@@ -19,7 +19,6 @@ dependencies {
     implementation project(Modules.domain)
     implementation Deps.material
     implementation Deps.constraintLayout
-    implementation Deps.recyclerview
     implementation Deps.coreKtx
     implementation Deps.navigationUi
     implementation Deps.navigationFragment

@@ -31,9 +31,7 @@ object Versions {
     const val gson = "2.8.6"
     const val koin = "2.1.6"
     const val navigation = "2.4.2"
-    const val fragment = "1.2.5"
     const val appcompat = "1.2.0"
-    const val recyclerview = "1.1.0"
     const val constraintLayout = "2.0.0-rc1"
     const val coreKtx = "1.3.1"
     const val chucker = "3.5.2"
@@ -58,12 +56,9 @@ object Deps {
 
     // ui
     const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
-    const val recyclerview = "androidx.recyclerview:recyclerview:${Versions.recyclerview}"
     const val constraintLayout =
         "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
     const val coreKtx = "androidx.core:core-ktx:${Versions.coreKtx}"
-    const val fragment = "androidx.fragment:fragment:${Versions.fragment}"
-    const val fragmentKtx = "androidx.fragment:fragment-ktx:${Versions.fragment}"
     const val material = "com.google.android.material:material:${Versions.material}"
 
     // data

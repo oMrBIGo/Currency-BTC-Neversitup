@@ -10,7 +10,6 @@ dependencies {
 
     implementation Deps.appcompat
     implementation Deps.coreKtx
-    implementation Deps.recyclerview
     implementation Deps.constraintLayout
     implementation Deps.material
     implementation Deps.koin
