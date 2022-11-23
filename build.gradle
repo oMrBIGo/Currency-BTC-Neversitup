@@ -12,7 +12,6 @@ buildscript {
         classpath Deps.kotlinGradlePlugin
         classpath Deps.kotlinExtensions
         classpath Deps.navigationSafeArgsGradlePlugin
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10'
     }
 }
 

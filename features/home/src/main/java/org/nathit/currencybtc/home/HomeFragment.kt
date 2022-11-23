@@ -11,7 +11,7 @@ import org.nathit.currencybtc.common.ui.base.BaseViewModel
 
 import org.nathit.currencybtc.home.databinding.FragmentHomeBinding
 
-class HomeFragment : BaseFragment<BaseViewModel, FragmentHomeBinding>() {
+class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
 
     override val viewModel: HomeViewModel by viewModel()
     override fun getLayoutId(): Int = R.layout.fragment_home
