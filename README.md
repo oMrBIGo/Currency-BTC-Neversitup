@@ -15,7 +15,3 @@
 - [okhttp3] com.squareup.okhttp3:logging-interceptor:4.9.0 <https://github.com/square/okhttp>
 - [chucker] com.github.chuckerteam.chucker:library:3.5.2 <https://github.com/ChuckerTeam/chucker>
 - [chuckerNoOp] com.github.chuckerteam.chucker:library-no-op:3.5.2 <https://github.com/ChuckerTeam/chucker>
-
-[<img src="https://sv1.img.in.th/5xqT5.png">]()
-
-[<img src="https://sv1.img.in.th/5x8DJ.png">]()
